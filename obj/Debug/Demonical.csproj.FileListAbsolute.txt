@@ -1,0 +1,13 @@
+C:\Users\Artem\source\repos\Demonical\bin\Debug\Demonical.exe.config
+C:\Users\Artem\source\repos\Demonical\bin\Debug\Demonical.exe
+C:\Users\Artem\source\repos\Demonical\bin\Debug\Demonical.pdb
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.csproj.AssemblyReference.cache
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.Properties.Resources.resources
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.csproj.GenerateResource.cache
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.csproj.CoreCompileInputs.cache
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.exe
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.pdb
+C:\Users\Artem\source\repos\Demonical\bin\Debug\asa-TZ\Demonical.resources.dll
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.src.GUI.Menu.resources
+C:\Users\Artem\source\repos\Demonical\obj\Debug\Demonical.src.GUI.Menu.asa-TZ.resources
+C:\Users\Artem\source\repos\Demonical\obj\Debug\asa-TZ\Demonical.resources.dll
