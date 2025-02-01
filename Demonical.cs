@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using Demonical.src.GUI;
+using Woyska.Console;
 
 namespace Demonical
 {
@@ -23,62 +24,37 @@ namespace Demonical
 
         static void Main()
         {
-            AllocConsole();
+            AllocConsole();   
 
-            Console.Title = "Demonical | Client";
+            Console.Title("Demonical | Client");
 
-            Console.OutputEncoding = Encoding.UTF8;
+            Console.EncodingUTF8();
+            
+            Console.Send("darkblue", "██████  ███████ ███    ███  ██████  ███    ██ ██  ██████  █████  ██      ");
+            Console.Send("darkblue", "██   ██ ██      ████  ████ ██    ██ ████   ██ ██ ██      ██   ██ ██      ");
+            Console.Send("darkblue", "██   ██ █████   ██ ████ ██ ██    ██ ██ ██  ██ ██ ██      ███████ ██      ");
+            Console.Send("darkblue", "██   ██ ██      ██  ██  ██ ██    ██ ██  ██ ██ ██ ██      ██   ██ ██      ");
+            Console.Send("darkblue", "██████  ███████ ██      ██  ██████  ██   ████ ██  ██████ ██   ██ ███████ ");
 
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-
-            Console.WriteLine("██████  ███████ ███    ███  ██████  ███    ██ ██  ██████  █████  ██      ");
-            Console.WriteLine("██   ██ ██      ████  ████ ██    ██ ████   ██ ██ ██      ██   ██ ██      ");
-            Console.WriteLine("██   ██ █████   ██ ████ ██ ██    ██ ██ ██  ██ ██ ██      ███████ ██      ");
-            Console.WriteLine("██   ██ ██      ██  ██  ██ ██    ██ ██  ██ ██ ██ ██      ██   ██ ██      ");
-            Console.WriteLine("██████  ███████ ██      ██  ██████  ██   ████ ██  ██████ ██   ██ ███████ ");
-
-            Console.ForegroundColor = ConsoleColor.White;
-
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write("Информация");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("] Made by");
-
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(" Destr1x");
-
-            Console.ForegroundColor = ConsoleColor.White;
-
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write("Информация");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("] Demonical");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(" v1.0");
-
-            Console.ForegroundColor = ConsoleColor.White;
-
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write("Информация");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("] Открытие меню на");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(" TAB");
-
-            Console.ForegroundColor = ConsoleColor.White;
-
-            Console.Write("[");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write("Информация");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("] Закрытие программы на");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(" F12 ");
-
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("[", "white");
+            Console.Write("Информация", "darkblue");
+            Console.Write("] Made by", "white");
+            Console.Send("darkblue", " Destr1x");
+            
+            Console.Write("[", "white");
+            Console.Write("Информация", "darkblue");
+            Console.Write("] Demonical", "white");
+            Console.Send("darkblue", " v1.0");
+            
+            Console.Write("[", "white");
+            Console.Write("Информация", "darkblue");
+            Console.Write("] Открытие меню на", "white");
+            Console.Send("darkblue", " TAB");
+            
+            Console.Write("[", "white");
+            Console.Write("Информация", "darkblue");
+            Console.Write("] Закрытие программы на", "white");
+            Console.Send("darkblue", " F12");
 
             Thread.Sleep(5000);
 
@@ -90,7 +66,7 @@ namespace Demonical
             {
                 if (GetAsyncKeyState(Keys.F12) != 0)
                 {
-                    Environment.Exit(0);
+                    System.Environment.Exit(0);
                 }
 
                 if (GetAsyncKeyState(Keys.Tab) != 0)
@@ -103,7 +79,7 @@ namespace Demonical
                     }
                     else
                     {
-                        menu.Invoke(new Action(() => menu.Close()));
+                        menu.Invoke(new System.Action(() => menu.Close()));
                     }
                     Thread.Sleep(300);
                 }
