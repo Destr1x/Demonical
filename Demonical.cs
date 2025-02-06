@@ -79,7 +79,7 @@ namespace Demonical
                     }
                     else
                     {
-                        menu.Invoke(new System.Action(() => menu.Close()));
+                        menu.Invoke(new System.Action()) => menu.Close()));
                     }
                     Thread.Sleep(300);
                 }
